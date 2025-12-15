@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="FakeStore.Gateway.Api/FakeStore.Gateway.Api.csproj" />
+    <Project Path="FakeStore.Gateway.Application/FakeStore.Gateway.Application.csproj" />
+    <Project Path="FakeStore.Gateway.Domain/FakeStore.Gateway.Domain.csproj" />
+    <Project Path="FakeStore.Gateway.Infrastructure/FakeStore.Gateway.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/test/" />
+</Solution>
