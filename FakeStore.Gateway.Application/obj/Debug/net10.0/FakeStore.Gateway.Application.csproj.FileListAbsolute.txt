@@ -1,0 +1,17 @@
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Application\bin\Debug\net10.0\FakeStore.Gateway.Application.deps.json
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Application\bin\Debug\net10.0\FakeStore.Gateway.Application.dll
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Application\bin\Debug\net10.0\FakeStore.Gateway.Application.pdb
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Application\bin\Debug\net10.0\FakeStore.Gateway.Domain.dll
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Application\bin\Debug\net10.0\FakeStore.Gateway.Infrastructure.dll
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Application\bin\Debug\net10.0\FakeStore.Gateway.Infrastructure.pdb
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Application\bin\Debug\net10.0\FakeStore.Gateway.Domain.pdb
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Application\obj\Debug\net10.0\FakeStore.Gateway.Application.csproj.AssemblyReference.cache
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Application\obj\Debug\net10.0\FakeStore.Gateway.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Application\obj\Debug\net10.0\FakeStore.Gateway.Application.AssemblyInfoInputs.cache
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Application\obj\Debug\net10.0\FakeStore.Gateway.Application.AssemblyInfo.cs
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Application\obj\Debug\net10.0\FakeStore.Gateway.Application.csproj.CoreCompileInputs.cache
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Application\obj\Debug\net10.0\FakeStor.398CCF4F.Up2Date
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Application\obj\Debug\net10.0\FakeStore.Gateway.Application.dll
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Application\obj\Debug\net10.0\refint\FakeStore.Gateway.Application.dll
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Application\obj\Debug\net10.0\FakeStore.Gateway.Application.pdb
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Application\obj\Debug\net10.0\ref\FakeStore.Gateway.Application.dll
