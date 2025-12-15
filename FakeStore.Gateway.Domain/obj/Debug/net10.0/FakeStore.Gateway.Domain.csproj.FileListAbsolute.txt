@@ -1,0 +1,11 @@
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Domain\bin\Debug\net10.0\FakeStore.Gateway.Domain.deps.json
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Domain\bin\Debug\net10.0\FakeStore.Gateway.Domain.dll
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Domain\bin\Debug\net10.0\FakeStore.Gateway.Domain.pdb
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Domain\obj\Debug\net10.0\FakeStore.Gateway.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Domain\obj\Debug\net10.0\FakeStore.Gateway.Domain.AssemblyInfoInputs.cache
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Domain\obj\Debug\net10.0\FakeStore.Gateway.Domain.AssemblyInfo.cs
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Domain\obj\Debug\net10.0\FakeStore.Gateway.Domain.csproj.CoreCompileInputs.cache
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Domain\obj\Debug\net10.0\FakeStore.Gateway.Domain.dll
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Domain\obj\Debug\net10.0\refint\FakeStore.Gateway.Domain.dll
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Domain\obj\Debug\net10.0\FakeStore.Gateway.Domain.pdb
+C:\Users\eldar\source\repos\FakeStoreAPI_Gateway-Sigma\FakeStore.Gateway.Domain\obj\Debug\net10.0\ref\FakeStore.Gateway.Domain.dll
