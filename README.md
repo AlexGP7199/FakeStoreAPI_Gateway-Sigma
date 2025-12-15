@@ -1,42 +1,42 @@
-# ?? FakeStore Gateway API
+﻿#  FakeStore Gateway API
 
-API Gateway desarrollada con .NET 10 que consume y extiende la funcionalidad de [FakeStore API](https://fakestoreapi.com/), implementando patrones de dise�o profesionales, Clean Architecture y buenas pr�cticas de desarrollo.
+API Gateway desarrollada con .NET 10 que consume y extiende la funcionalidad de [FakeStore API](https://fakestoreapi.com/), implementando patrones de diseño profesionales, Clean Architecture y buenas prácticas de desarrollo.
 
-## ??? Arquitectura
+##  Arquitectura
 
-El proyecto sigue **Clean Architecture** con separaci�n clara de responsabilidades:
+El proyecto sigue **Clean Architecture** con separación clara de responsabilidades:
 
 ```
 FakeStore.Gateway/
-?
-??? ?? Api/                          # Capa de Presentaci�n
-?   ??? Controllers/                 # Endpoints REST
-?   ??? Extensions/                  # Configuraci�n de DI
-?   ??? Program.cs                   # Pipeline HTTP
-?   ??? Dockerfile                   # Contenedor Docker
-?
-??? ?? Application/                  # Capa de L�gica de Negocio
-?   ??? Commons/
-?   ?   ??? Bases/                  # BaseResponse, BaseResponseList
-?   ?   ??? Enums/                  # ErrorCode
-?   ?   ??? Helpers/                # BaseService
-?   ??? DTOs/                       # Data Transfer Objects
-?   ??? Interfaces/                 # Contratos de servicios
-?   ??? Mappers/                    # Transformaciones
-?   ??? Services/                   # L�gica CRUD y Cach�
-?   ??? Validators/                 # FluentValidation
-?   ??? Extensions/                 # DI de Application
-?
-??? ?? Infrastructure/               # Capa de Infraestructura
-?   ??? Clients/                    # Cliente HTTP externo
-?   ??? Configuration/              # Settings tipadas
-?   ??? Extensions/                 # DI + Polly
-?
-??? ?? Domain/                       # Capa de Dominio
-    ??? Entities/                   # Entidades de negocio
+│
+├── 📂 Api/                          # Capa de Presentación
+│   ├── Controllers/                 # Endpoints REST
+│   ├── Extensions/                  # Configuración de DI
+│   ├── Program.cs                   # Pipeline HTTP
+│   └── Dockerfile                   # Contenedor Docker
+│
+├── 📂 Application/                  # Capa de Lógica de Negocio
+│   ├── Commons/
+│   │   ├── Bases/                  # BaseResponse, BaseResponseList
+│   │   ├── Enums/                  # ErrorCode
+│   │   └── Helpers/                # BaseService
+│   ├── DTOs/                       # Data Transfer Objects
+│   ├── Interfaces/                 # Contratos de servicios
+│   ├── Mappers/                    # Transformaciones
+│   ├── Services/                   # Lógica CRUD y Caché
+│   ├── Validators/                 # FluentValidation
+│   └── Extensions/                 # DI de Application
+│
+├── 📂 Infrastructure/               # Capa de Infraestructura
+│   ├── Clients/                    # Cliente HTTP externo
+│   ├── Configuration/              # Settings tipadas
+│   └── Extensions/                 # DI + Polly
+│
+└── 📂 Domain/                       # Capa de Dominio
+    └── Entities/                   # Entidades de negocio
 ```
 
-## ?? Tecnolog�as
+##  Tecnologías
 
 - .NET 10.0
 - ASP.NET Core Web API
@@ -46,9 +46,9 @@ FakeStore.Gateway/
 - Docker
 - C# 14.0
 
-## ?? Instalaci�n
+##  Instalación
 
-### Opci�n 1: Ejecuci�n Local
+### Opción 1: Ejecución Local
 
 ```bash
 # Clonar el repositorio
@@ -58,14 +58,14 @@ cd FakeStoreAPI_Gateway-Sigma
 # Restaurar dependencias
 dotnet restore
 
-# Ejecutar la aplicaci�n
+# Ejecutar la aplicación
 dotnet run --project FakeStore.Gateway.Api
 
 # Abrir Swagger en el navegador
 # https://localhost:7038/swagger
 ```
 
-### Opci�n 2: Docker
+### Opción 2: Docker
 
 ```bash
 # Build de la imagen
@@ -78,7 +78,7 @@ docker run -d -p 8080:8080 --name fakestore-api fakestore-gateway
 # http://localhost:8080/swagger
 ```
 
-### Opci�n 3: Docker Hub
+### Opción 3: Docker Hub
 
 ```bash
 # Pull de la imagen desde Docker Hub
@@ -88,7 +88,7 @@ docker pull moonxz/fakestore-gateway-api:v1
 docker run -d -p 8080:8080 --name fakestore-api moonxz/fakestore-gateway-api:v1
 ```
 
-## ?? Configuraci�n
+##  Configuración
 
 Edita `appsettings.json` para personalizar:
 
@@ -111,22 +111,22 @@ Edita `appsettings.json` para personalizar:
 }
 ```
 
-### Par�metros de Configuraci�n
+### Parámetros de Configuración
 
-| Par�metro | Descripci�n | Valor por Defecto |
+| Parámetro | Descripción | Valor por Defecto |
 |-----------|-------------|-------------------|
 | `BaseUrl` | URL de FakeStore API | `https://fakestoreapi.com/` |
 | `TimeoutSeconds` | Timeout de peticiones HTTP | `30` |
-| `RetryCount` | N�mero de reintentos | `3` |
+| `RetryCount` | Número de reintentos | `3` |
 | `CircuitBreakerThreshold` | Fallos antes de abrir circuito | `5` |
-| `CircuitBreakerDurationSeconds` | Duraci�n del circuito abierto | `30` |
-| `AllowedOrigins` | Or�genes permitidos para CORS | Array de URLs |
+| `CircuitBreakerDurationSeconds` | Duración del circuito abierto | `30` |
+| `AllowedOrigins` | Orígenes permitidos para CORS | Array de URLs |
 
-## ?? Endpoints
+##  Endpoints
 
 ### Products
 
-| M�todo | Endpoint | Descripci�n | Respuesta |
+| Método | Endpoint | Descripción | Respuesta |
 |--------|----------|-------------|-----------|
 | `GET` | `/api/products` | Obtener todos los productos | `200 OK` |
 | `GET` | `/api/products/{id}` | Obtener producto por ID | `200 OK`, `404 Not Found` |
@@ -143,7 +143,7 @@ Content-Type: application/json
 {
   "title": "Producto Demo",
   "price": 99.99,
-  "description": "Descripci�n del producto",
+  "description": "Descripción del producto",
   "category": "electronics",
   "image": "https://example.com/image.jpg"
 }
@@ -158,7 +158,7 @@ Content-Type: application/json
     "id": 21,
     "title": "Producto Demo",
     "price": 99.99,
-    "description": "Descripci�n del producto",
+    "description": "Descripción del producto",
     "category": "electronics",
     "image": "https://example.com/image.jpg"
   },
@@ -168,19 +168,19 @@ Content-Type: application/json
 }
 ```
 
-### C�digos de Error
+### Códigos de Error
 
-| C�digo | Descripci�n | HTTP Status |
+| Código | Descripción | HTTP Status |
 |--------|-------------|-------------|
 | `0` | Sin error | `200 OK` |
-| `ValidationError` | Error de validaci�n | `400 Bad Request` |
+| `ValidationError` | Error de validación | `400 Bad Request` |
 | `NotFound` | Recurso no encontrado | `404 Not Found` |
 | `Conflict` | Conflicto de datos | `409 Conflict` |
 | `InternalServerError` | Error interno | `500 Internal Server Error` |
 | `ServiceUnavailable` | Servicio no disponible | `503 Service Unavailable` |
 | `GatewayTimeout` | Timeout de gateway | `504 Gateway Timeout` |
 
-## ?? Patrones Implementados
+##  Patrones Implementados
 
 ### Repository Pattern
 ```csharp
@@ -191,28 +191,28 @@ public interface IFakeStoreApiClient
     // ...
 }
 ```
-**Ventaja:** Abstracci�n del acceso a datos externos.
+**Ventaja:** Abstracción del acceso a datos externos.
 
 ### Service Layer Pattern
 ```csharp
 public class ProductsService : BaseService, IProductsService
 {
-    // L�gica de negocio centralizada
+    // Lógica de negocio centralizada
 }
 ```
-**Ventaja:** Controladores delgados, l�gica reutilizable.
+**Ventaja:** Controladores delgados, lógica reutilizable.
 
 ### DTO Pattern
 ```csharp
 CreateProductDto, UpdateProductDto, ProductDto
 ```
-**Ventaja:** Control sobre contratos de API, prevenci�n de over-posting.
+**Ventaja:** Control sobre contratos de API, prevención de over-posting.
 
 ### Validator Pattern
 ```csharp
 public class CreateProductDtoValidator : AbstractValidator<CreateProductDto>
 {
-    // Reglas de validaci�n declarativas
+    // Reglas de validación declarativas
 }
 ```
 **Ventaja:** Validaciones expresivas y testables.
@@ -233,9 +233,9 @@ public abstract class BaseService
 ```csharp
 services.Configure<FakeStoreApiSettings>(configuration.GetSection("FakeStoreApi"));
 ```
-**Ventaja:** Configuraci�n tipada y externa.
+**Ventaja:** Configuración tipada y externa.
 
-## ??? Resiliencia
+##  Resiliencia
 
 ### Retry Policy
 - **Reintentos:** 3 intentos
@@ -250,27 +250,27 @@ services.Configure<FakeStoreApiSettings>(configuration.GetSection("FakeStoreApi"
 
 ### Circuit Breaker
 - **Umbral:** 5 fallos consecutivos
-- **Duraci�n:** 30 segundos abierto
-- **Protecci�n:** Evita colapsar la API externa
+- **Duración:** 30 segundos abierto
+- **Protección:** Evita colapsar la API externa
 
 ```
-[Cerrado] ? 5 fallos ? [Abierto (30s)] ? [Semi-Abierto] ? [Cerrado]
+[Cerrado] → 5 fallos → [Abierto (30s)] → [Semi-Abierto] → [Cerrado]
 ```
 
-## ?? Docker
+##  Docker
 
 ### Multi-Stage Build
 
-El Dockerfile est� optimizado con m�ltiples etapas:
+El Dockerfile está optimizado con múltiples etapas:
 
 1. **Base** - Runtime .NET 10 (aspnet)
-2. **Build** - SDK .NET 10 + compilaci�n
-3. **Publish** - Publicaci�n optimizada
+2. **Build** - SDK .NET 10 + compilación
+3. **Publish** - Publicación optimizada
 4. **Final** - Solo runtime + binarios (~220MB)
 
 ### Ventajas
 - Imagen final ligera (solo runtime, sin SDK)
-- Cach� de capas optimizado
+- Caché de capas optimizado
 - Seguridad (usuario no-root)
 - Portabilidad total
 
@@ -291,16 +291,16 @@ services:
     restart: unless-stopped
 ```
 
-## ?? Estructura del Proyecto
+##  Estructura del Proyecto
 
-### API Layer (Presentaci�n)
+### API Layer (Presentación)
 - **Controllers:** ProductsController con endpoints REST
 - **Extensions:** ServiceCollectionExtensions (orquestador de DI)
 - **Program.cs:** Pipeline HTTP, CORS, Swagger, Middleware
 
-### Application Layer (L�gica de Negocio)
+### Application Layer (Lógica de Negocio)
 - **Services:** 
-  - ProductsService (CRUD con l�gica de negocio)
+  - ProductsService (CRUD con lógica de negocio)
   - ProductCacheService (3 diccionarios concurrentes)
   - BaseService (manejo centralizado de excepciones)
 - **DTOs:** CreateProductDto, UpdateProductDto, ProductDto
@@ -319,11 +319,11 @@ services:
 ### Domain Layer (Entidades)
 - **Entities:** Products (entidad pura de negocio sin dependencias)
 
-## ?? Licencia
+##  Licencia
 
-Este proyecto es de c�digo abierto para fines educativos.
+Este proyecto es de código abierto para fines educativos.
 
-## ????? Autor
+##  Autor
 
 **Alex GP**  
 GitHub: [@AlexGP7199](https://github.com/AlexGP7199)  
@@ -331,6 +331,6 @@ Proyecto: [FakeStore Gateway API](https://github.com/AlexGP7199/FakeStoreAPI_Gat
 
 ---
 
-? **Si te gusta este proyecto, dale una estrella en GitHub!**
+⭐ **Si te gusta este proyecto, dale una estrella en GitHub!**
 
-?? **Documentaci�n completa:** [Swagger UI](https://localhost:7038/swagger) (cuando ejecutes localmente)
+ **Documentación completa:** [Swagger UI](https://localhost:7038/swagger) (cuando ejecutes localmente)
